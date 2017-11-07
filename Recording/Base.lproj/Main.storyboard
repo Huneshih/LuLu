@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ox7-ty-gax">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Recording" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdl-mL-371">
+                                <rect key="frame" x="150" y="295" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.73725490196078436" green="0.70980392156862748" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bh0-BQ-P0p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZF-aj-9OL">
+                                <rect key="frame" x="150" y="296" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.73725490196078436" green="0.70980392156862748" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="shO-nD-lKd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCi-v2-0OP">
+                                <rect key="frame" x="150" y="295" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.84705882349999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="delBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fal-CV-bBN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="recorderBTN" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsK-4E-LcH">
+                                <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.53657705269607847" green="0.82748321333741837" blue="0.87323995353349682" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="UTh-Ir-Z11"/>
+                                    <constraint firstAttribute="height" constant="100" id="kIH-G7-49h"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startRecordBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p9O-DT-leR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92941176470588238" green="0.97647058823529409" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tsK-4E-LcH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CMg-84-tTc"/>
+                            <constraint firstItem="tsK-4E-LcH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Wuq-DT-2Yu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kfo-7Z-YvB">
+                        <barButtonItem key="rightBarButtonItem" image="file.png" id="sJv-oM-4Nz">
+                            <color key="tintColor" red="0.5365770527" green="0.82748321329999996" blue="0.87323995350000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="qlp-Bf-TpF" kind="push" id="vKc-z7-VZj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="delOL" destination="NCi-v2-0OP" id="WrC-vr-uzv"/>
+                        <outlet property="playOL" destination="cdl-mL-371" id="g8j-H2-uV2"/>
+                        <outlet property="saveOL" destination="RZF-aj-9OL" id="E67-jU-QC7"/>
+                        <outlet property="startRecordOL" destination="tsK-4E-LcH" id="szb-NX-w3s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1024.8" y="94.902548725637189"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="Cwj-9D-2Pi">
+            <objects>
+                <tableViewController storyboardIdentifier="MyTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qlp-Bf-TpF" customClass="TableViewController" customModule="Recording" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="mYx-PP-5oq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Cell" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="80" id="MHf-EG-Bjv" customClass="TableViewCell" customModule="Recording" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MHf-EG-Bjv" id="H0b-RW-ibu">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvB-4P-jSF">
+                                            <rect key="frame" x="59" y="32" width="35.5" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.34434486040000001" green="0.34434486040000001" blue="0.34434486040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8d-iH-6MJ">
+                                            <rect key="frame" x="15" y="28" width="24" height="24"/>
+                                            <color key="backgroundColor" red="0.5365770527" green="0.82748321329999996" blue="0.87323995350000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="24" id="NbB-h2-LqH"/>
+                                                <constraint firstAttribute="width" constant="24" id="nTP-oz-6GU"/>
+                                            </constraints>
+                                            <state key="normal" image="playArrow.png"/>
+                                            <connections>
+                                                <action selector="playBtn:" destination="MHf-EG-Bjv" eventType="touchUpInside" id="Eo8-zA-qIm"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBf-pp-Xud">
+                                            <rect key="frame" x="333" y="28" width="24" height="24"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="24" id="76I-vk-A14"/>
+                                                <constraint firstAttribute="height" constant="24" id="wR0-Cn-VDZ"/>
+                                            </constraints>
+                                            <color key="tintColor" red="0.98431372549019602" green="0.84705882352941175" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                                            <state key="normal" image="upload.png"/>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="s8d-iH-6MJ" firstAttribute="leading" secondItem="H0b-RW-ibu" secondAttribute="leading" constant="15" id="2Da-cJ-JUU"/>
+                                        <constraint firstItem="s8d-iH-6MJ" firstAttribute="centerY" secondItem="H0b-RW-ibu" secondAttribute="centerY" id="3Up-jq-iFC"/>
+                                        <constraint firstItem="GBf-pp-Xud" firstAttribute="centerY" secondItem="H0b-RW-ibu" secondAttribute="centerY" id="46e-89-m4C"/>
+                                        <constraint firstItem="uvB-4P-jSF" firstAttribute="leading" secondItem="s8d-iH-6MJ" secondAttribute="trailing" constant="20" id="Hzl-5L-lG7"/>
+                                        <constraint firstItem="GBf-pp-Xud" firstAttribute="trailing" secondItem="H0b-RW-ibu" secondAttribute="trailingMargin" constant="-10" id="PKk-Jx-yGJ"/>
+                                        <constraint firstItem="uvB-4P-jSF" firstAttribute="centerY" secondItem="H0b-RW-ibu" secondAttribute="centerY" id="TXf-np-Pbx"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uvB-4P-jSF" secondAttribute="trailing" constant="20" symbolic="YES" id="Ufj-Fz-L6I"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="fileNameLabel" destination="uvB-4P-jSF" id="2zv-DO-P4O"/>
+                                    <outlet property="playOl" destination="s8d-iH-6MJ" id="bLO-wg-gTI"/>
+                                    <outlet property="uploadOl" destination="GBf-pp-Xud" id="KNj-1M-lIw"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qlp-Bf-TpF" id="wI0-Mr-f4u"/>
+                            <outlet property="delegate" destination="qlp-Bf-TpF" id="CvN-Ta-8Cl"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="pFD-4N-0em">
+                        <barButtonItem key="leftBarButtonItem" image="arrowLeft.png" id="kUR-Ac-BSn">
+                            <color key="tintColor" red="0.44705882349999998" green="0.71764705880000002" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="backBtn:" destination="qlp-Bf-TpF" id="NoV-UF-qTb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8vt-ut-rgh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1920.8" y="94.902548725637189"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0aH-FM-tJG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ox7-ty-gax" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MZR-rU-dxM">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="MiX-7a-ZXo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k1l-xG-oGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118" y="95"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowLeft.png" width="36" height="36"/>
+        <image name="file.png" width="36" height="36"/>
+        <image name="playArrow.png" width="24" height="24"/>
+        <image name="upload.png" width="24" height="24"/>
+    </resources>
+</document>

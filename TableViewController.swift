@@ -29,13 +29,6 @@ class TableViewController: UITableViewController, AVAudioPlayerDelegate {
 
         tableView.separatorColor = UIColor(red: 200 / 255, green: 240 / 255, blue: 255 / 255, alpha: 1)
         
-        
-//        NotificationCenter.default.addObserver(self, selector: #selector(play(ntfc:)), name: NSNotification.Name("play"), object: nil)
-        
-        
-        
-        
-        
         // 以下有可能會出錯，所以需要 try
         do {
             // 設定模式： AVAudioSessionCategoryPlayAndRecord  -->  播放與錄音
@@ -46,11 +39,6 @@ class TableViewController: UITableViewController, AVAudioPlayerDelegate {
             print("error")
         }
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     @IBAction func backBtn(_ sender: Any) {
@@ -102,75 +90,12 @@ class TableViewController: UITableViewController, AVAudioPlayerDelegate {
         let url = [fileURL]
         
         let uploadController = UIActivityViewController(activityItems: url, applicationActivities: nil)
-//        uploadController.excludedActivityTypes = [UIActivityType.airDrop, UIActivityType.message, UIActivityType.mail, UIActivityType.postToFacebook, UIActivityType.postToTwitter]
         
         present(uploadController, animated: true, completion: nil)
         
         
         
     }
-    
-    
-    
-//    @objc func play(ntfc: Notification) {
-//
-//        print("TVC 收到播放通知")
-//
-//        guard ntfc.userInfo?["playName"] != nil else {
-//            return
-//        }
-//
-//        playName = ntfc.userInfo!["playName"] as! String
-//
-//        guard let url = URL.init(string: DataManager.sharedInstance().getFilePath(filename: playName)!) else {
-//            return
-//        }
-//
-//        if isPlaying == false {
-//            do {
-//                try player = AVAudioPlayer(contentsOf: url)
-//            } catch let err {
-//                print(err.localizedDescription)
-//            }
-//
-//            isPlaying = true
-//
-//            player.delegate = self
-//
-//            player.play()
-//
-//            NotificationCenter.default.addObserver(self, selector: #selector(stopPlay), name: NSNotification.Name("stopPlayByCell"), object: nil)
-//
-//        } else {
-//
-//            NotificationCenter.default.post(name: NSNotification.Name("otherCellPlay"), object: nil)
-//
-//            do {
-//                try player = AVAudioPlayer(contentsOf: url)
-//            } catch let err {
-//                print(err.localizedDescription)
-//            }
-//
-//            player.delegate = self
-//
-//            player.play()
-//
-//        }
-//    }
-//
-//
-//    @objc func stopPlay() {
-//        isPlaying = false
-//        player.stop()
-//        NotificationCenter.default.removeObserver(self, name: NSNotification.Name("stopPlayByCell"), object: nil)
-//    }
-//
-//
-//    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
-//        isPlaying = false
-//        NotificationCenter.default.post(name: NSNotification.Name("playOver"), object: nil)
-//    }
-    
     
 
     /*
@@ -180,6 +105,7 @@ class TableViewController: UITableViewController, AVAudioPlayerDelegate {
         return true
     }
     */
+    
 
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {

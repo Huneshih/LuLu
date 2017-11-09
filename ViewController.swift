@@ -88,11 +88,6 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         navigationItem.rightBarButtonItem = rightBarBtnItem
         
         
-//        print(FileManager.default.urls(for: FileManager.SearchPathDirectory.documentDirectory, in: FileManager.SearchPathDomainMask.userDomainMask).first!)
-        
-        // Do any additional setup after loading the view.
-        
-        
         // 以下有可能會出錯，所以需要 try
         do {
             // 設定模式： AVAudioSessionCategoryPlayAndRecord  -->  播放與錄音

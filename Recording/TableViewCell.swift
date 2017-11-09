@@ -16,21 +16,14 @@ class TableViewCell: UITableViewCell, AVAudioPlayerDelegate {
     
     let audioManager = AudioManager.shared
     
-//    var fileName = "123"
-    
     var isPlaying = false
     
 
     override func awakeFromNib() {
         super.awakeFromNib()
         
-//        fileName = fileNameLabel.text!
-        
-//        print("cell 的 fileName: \(fileName)")
-        
         playOl.layer.cornerRadius = playOl.frame.width / 2
         playOl.clipsToBounds = true
-        // Initialization code
         
     }
     
@@ -39,11 +32,7 @@ class TableViewCell: UITableViewCell, AVAudioPlayerDelegate {
         
         if isPlaying == false {
             
-            
-            
             isPlaying = true
-            
-//            NotificationCenter.default.post(name: NSNotification.Name("play"), object: nil, userInfo: ["playName":"\(fileNameLabel.text!)"])
             
             playOl.setImage(UIImage(named: "stop.png"), for: .normal)
             
@@ -72,10 +61,8 @@ class TableViewCell: UITableViewCell, AVAudioPlayerDelegate {
     
     func cellStopPlay() {
         if isPlaying == true {
-            isPlaying = false
             
-//            NotificationCenter.default.post(name: NSNotification.Name("stopPlayByCell"), object: nil)
-//
+            isPlaying = false
             audioManager.stopPlay()
             
             NotificationCenter.default.removeObserver(self, name: NSNotification.Name("playOver"), object: nil)

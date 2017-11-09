@@ -83,7 +83,9 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
-        
+        let rightBarBtnItem = UIBarButtonItem(image: #imageLiteral(resourceName: "file.png"), style: .plain, target: self, action: #selector(toTableVC))
+        rightBarBtnItem.tintColor = #colorLiteral(red: 0, green: 0.5690457821, blue: 0.5746168494, alpha: 1)
+        navigationItem.rightBarButtonItem = rightBarBtnItem
         
         
 //        print(FileManager.default.urls(for: FileManager.SearchPathDirectory.documentDirectory, in: FileManager.SearchPathDomainMask.userDomainMask).first!)
@@ -133,6 +135,16 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         delOL.frame = CGRect(x: view.frame.midX - 37.5, y: view.frame.midY - 37.5, width: 75, height: 75)
         playOL.frame = CGRect(x: view.frame.midX - 37.5, y: view.frame.midY - 37.5, width: 75, height: 75)
         view.bringSubview(toFront: startRecordOL)
+    }
+    
+    
+    
+    @objc func toTableVC() {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        
+        let tableVC = sb.instantiateViewController(withIdentifier: "MyTableViewController")
+        
+        navigationController?.pushViewController(tableVC, animated: true)
     }
     
     
@@ -435,7 +447,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     
     // 暫停錄音
-    func pauseRecord() {
+    @objc func pauseRecord() {
         
         recorder?.pause()
         isPauseRecord = true
@@ -453,7 +465,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     
     // 暫停播放
-    func pausePlay() {
+    @objc func pausePlay() {
         
         isPlaying = false
         
@@ -474,7 +486,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
   
     
     // 聲波隨音量大小改變
-    func soundWave() {
+    @objc func soundWave() {
         volumeTimingUpdate()
         if let maxVolume = volumeMax {
             let lowPassResult:Double = pow(Double(50), Double(0.05*maxVolume)) * 200 + 100

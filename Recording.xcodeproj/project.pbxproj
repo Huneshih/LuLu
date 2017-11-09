@@ -41,8 +41,8 @@
 		B3C18BD71F46CBC600CD1927 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C18BD61F46CBC600CD1927 /* DataManager.swift */; };
 		B3C68E901FA47350001826FC /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C68E8F1FA47350001826FC /* AudioManager.swift */; };
 		B3F7AF7C1F4C4525008BAB72 /* arrowLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F7AF791F4C4525008BAB72 /* arrowLeft.png */; };
-		B3F7AF7D1F4C4525008BAB72 /* arrowLeft＠2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F7AF7A1F4C4525008BAB72 /* arrowLeft＠2x.png */; };
-		B3F7AF7E1F4C4525008BAB72 /* arrowLeft＠3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F7AF7B1F4C4525008BAB72 /* arrowLeft＠3x.png */; };
+		B3F7AF7D1F4C4525008BAB72 /* arrowLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F7AF7A1F4C4525008BAB72 /* arrowLeft@2x.png */; };
+		B3F7AF7E1F4C4525008BAB72 /* arrowLeft@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F7AF7B1F4C4525008BAB72 /* arrowLeft@3x.png */; };
 		B3F7AF881F4C5AAB008BAB72 /* upload.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F7AF851F4C5AAB008BAB72 /* upload.png */; };
 		B3F7AF891F4C5AAB008BAB72 /* upload@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F7AF861F4C5AAB008BAB72 /* upload@2x.png */; };
 		B3F7AF8A1F4C5AAB008BAB72 /* upload@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F7AF871F4C5AAB008BAB72 /* upload@3x.png */; };
@@ -85,8 +85,8 @@
 		B3C18BD61F46CBC600CD1927 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		B3C68E8F1FA47350001826FC /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		B3F7AF791F4C4525008BAB72 /* arrowLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowLeft.png; sourceTree = "<group>"; };
-		B3F7AF7A1F4C4525008BAB72 /* arrowLeft＠2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrowLeft＠2x.png"; sourceTree = "<group>"; };
-		B3F7AF7B1F4C4525008BAB72 /* arrowLeft＠3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrowLeft＠3x.png"; sourceTree = "<group>"; };
+		B3F7AF7A1F4C4525008BAB72 /* arrowLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrowLeft@2x.png"; sourceTree = "<group>"; };
+		B3F7AF7B1F4C4525008BAB72 /* arrowLeft@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrowLeft@3x.png"; sourceTree = "<group>"; };
 		B3F7AF851F4C5AAB008BAB72 /* upload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upload.png; sourceTree = "<group>"; };
 		B3F7AF861F4C5AAB008BAB72 /* upload@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload@2x.png"; sourceTree = "<group>"; };
 		B3F7AF871F4C5AAB008BAB72 /* upload@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload@3x.png"; sourceTree = "<group>"; };
@@ -111,8 +111,8 @@
 				B3F7AF861F4C5AAB008BAB72 /* upload@2x.png */,
 				B3F7AF871F4C5AAB008BAB72 /* upload@3x.png */,
 				B3F7AF791F4C4525008BAB72 /* arrowLeft.png */,
-				B3F7AF7A1F4C4525008BAB72 /* arrowLeft＠2x.png */,
-				B3F7AF7B1F4C4525008BAB72 /* arrowLeft＠3x.png */,
+				B3F7AF7A1F4C4525008BAB72 /* arrowLeft@2x.png */,
+				B3F7AF7B1F4C4525008BAB72 /* arrowLeft@3x.png */,
 				B379EBB11F4B18DB00C35092 /* file.png */,
 				B379EBB21F4B18DB00C35092 /* file@2x.png */,
 				B379EBB31F4B18DB00C35092 /* file@3x.png */,
@@ -272,8 +272,8 @@
 				B30E996A1F45B78000A06541 /* playArrow.png in Resources */,
 				B35D837D1F4EE31200BD5EF2 /* wave@3x.png in Resources */,
 				B30E99691F45B78000A06541 /* playArrow@3x.png in Resources */,
-				B3F7AF7E1F4C4525008BAB72 /* arrowLeft＠3x.png in Resources */,
-				B3F7AF7D1F4C4525008BAB72 /* arrowLeft＠2x.png in Resources */,
+				B3F7AF7E1F4C4525008BAB72 /* arrowLeft@3x.png in Resources */,
+				B3F7AF7D1F4C4525008BAB72 /* arrowLeft@2x.png in Resources */,
 				B379EBB51F4B18DB00C35092 /* file@2x.png in Resources */,
 				B30E99521F45B69F00A06541 /* del.png in Resources */,
 				B30E995C1F45B6EF00A06541 /* mic@2x.png in Resources */,
@@ -377,7 +377,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -428,7 +428,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -443,12 +443,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N244XN77P3;
 				INFOPLIST_FILE = Recording/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Hune.Recording;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hune.SoundKoala;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -458,12 +459,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N244XN77P3;
 				INFOPLIST_FILE = Recording/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Hune.Recording;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hune.SoundKoala;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

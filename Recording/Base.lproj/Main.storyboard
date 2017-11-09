@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ox7-ty-gax">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ox7-ty-gax">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -63,7 +62,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="recorderBTN" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsK-4E-LcH">
                                 <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.53657705269607847" green="0.82748321333741837" blue="0.87323995353349682" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.53725490196078429" green="0.82745098039215681" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="UTh-Ir-Z11"/>
                                     <constraint firstAttribute="height" constant="100" id="kIH-G7-49h"/>
@@ -83,14 +82,7 @@
                             <constraint firstItem="tsK-4E-LcH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Wuq-DT-2Yu"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="kfo-7Z-YvB">
-                        <barButtonItem key="rightBarButtonItem" image="file.png" id="sJv-oM-4Nz">
-                            <color key="tintColor" red="0.5365770527" green="0.82748321329999996" blue="0.87323995350000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <segue destination="qlp-Bf-TpF" kind="push" id="vKc-z7-VZj"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="kfo-7Z-YvB"/>
                     <connections>
                         <outlet property="delOL" destination="NCi-v2-0OP" id="WrC-vr-uzv"/>
                         <outlet property="playOL" destination="cdl-mL-371" id="g8j-H2-uV2"/>
@@ -119,13 +111,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvB-4P-jSF">
-                                            <rect key="frame" x="59" y="32" width="35.5" height="17"/>
+                                            <rect key="frame" x="69" y="32" width="35.5" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" red="0.34434486040000001" green="0.34434486040000001" blue="0.34434486040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8d-iH-6MJ">
-                                            <rect key="frame" x="15" y="28" width="24" height="24"/>
+                                            <rect key="frame" x="25" y="28" width="24" height="24"/>
                                             <color key="backgroundColor" red="0.5365770527" green="0.82748321329999996" blue="0.87323995350000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="24" id="NbB-h2-LqH"/>
@@ -137,7 +129,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBf-pp-Xud">
-                                            <rect key="frame" x="333" y="28" width="24" height="24"/>
+                                            <rect key="frame" x="325" y="28" width="24" height="24"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="24" id="76I-vk-A14"/>
                                                 <constraint firstAttribute="height" constant="24" id="wR0-Cn-VDZ"/>
@@ -147,7 +139,7 @@
                                         </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="s8d-iH-6MJ" firstAttribute="leading" secondItem="H0b-RW-ibu" secondAttribute="leading" constant="15" id="2Da-cJ-JUU"/>
+                                        <constraint firstItem="s8d-iH-6MJ" firstAttribute="leading" secondItem="H0b-RW-ibu" secondAttribute="leading" constant="25" id="2Da-cJ-JUU"/>
                                         <constraint firstItem="s8d-iH-6MJ" firstAttribute="centerY" secondItem="H0b-RW-ibu" secondAttribute="centerY" id="3Up-jq-iFC"/>
                                         <constraint firstItem="GBf-pp-Xud" firstAttribute="centerY" secondItem="H0b-RW-ibu" secondAttribute="centerY" id="46e-89-m4C"/>
                                         <constraint firstItem="uvB-4P-jSF" firstAttribute="leading" secondItem="s8d-iH-6MJ" secondAttribute="trailing" constant="20" id="Hzl-5L-lG7"/>
@@ -202,7 +194,6 @@
     </scenes>
     <resources>
         <image name="arrowLeft.png" width="36" height="36"/>
-        <image name="file.png" width="36" height="36"/>
         <image name="playArrow.png" width="24" height="24"/>
         <image name="upload.png" width="24" height="24"/>
     </resources>
